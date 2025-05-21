@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/machinebg1"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/milkbutton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/comic_neue_bold"
+        android:text="milk"
+        android:textColor="#62869D"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.171" />
+
+    <Button
+        android:id="@+id/chocobutton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/comic_neue_bold"
+        android:text="Choco"
+        android:textColor="#62869D"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/milkbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/milkbutton"
+        app:layout_constraintTop_toTopOf="@+id/milkbutton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/hotwaterbutton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/comic_neue_bold"
+        android:text="hot water"
+        android:textColor="#62869D"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/foambutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/foambutton"
+        app:layout_constraintTop_toTopOf="@+id/foambutton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/foambutton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="12dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/comic_neue_bold"
+        android:text="foam"
+        android:textColor="#62869D"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/milkbutton"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/milkbutton"
+        app:layout_constraintTop_toBottomOf="@+id/milkbutton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/coffeebutton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/comic_neue_bold"
+        android:hapticFeedbackEnabled="false"
+        android:text="coffee"
+        android:textColor="#62869D"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/milkbutton"
+        app:layout_constraintEnd_toStartOf="@+id/milkbutton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/milkbutton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/vanillabutton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/comic_neue_bold"
+        android:text="vanilla"
+        android:textColor="#62869D"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/foambutton"
+        app:layout_constraintEnd_toStartOf="@+id/foambutton"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/foambutton"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/calculatebutton"
+        android:layout_width="154dp"
+        android:layout_height="79dp"
+        android:backgroundTint="#FFFFFF"
+        android:fontFamily="@font/comic_neue_bold"
+        android:text="Make"
+        android:textColor="#62869D"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foambutton"
+        app:layout_constraintVertical_bias="0.209" />
+
+    <Button
+        android:id="@+id/nextpage"
+        android:layout_width="238dp"
+        android:layout_height="63dp"
+        android:backgroundTint="#006A1616"
+        android:text="Instructions"
+        android:textAlignment="textEnd"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.788" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

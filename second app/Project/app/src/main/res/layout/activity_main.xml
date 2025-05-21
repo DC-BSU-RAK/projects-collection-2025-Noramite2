@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/nbg1"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/MusicPLayerText"
+        android:layout_width="264dp"
+        android:layout_height="51dp"
+        android:text="Musico pulayah"
+        android:textAlignment="textStart"
+        android:textColor="@color/white"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.07" />
+
+    <LinearLayout
+        android:id="@+id/SeekBarLayout"
+        android:layout_width="0dp"
+        android:layout_height="26dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.906">
+
+        <SeekBar
+            android:id="@+id/SeekBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:progressBackgroundTint="@color/white"
+            android:progressTint="@color/white"
+            android:thumbTint="@color/white" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/SongTitleView"
+        android:layout_width="0dp"
+        android:layout_height="32dp"
+        android:layout_weight="1"
+        android:text="Song Title"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/SeekBarLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/NextSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#A6FBFB"
+        android:text="Next"
+        android:textColor="#085656"
+        app:layout_constraintBottom_toBottomOf="@+id/MainPlayPauseButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.349"
+        app:layout_constraintStart_toEndOf="@+id/MainPlayPauseButton"
+        app:layout_constraintTop_toTopOf="@+id/MainPlayPauseButton"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <Button
+        android:id="@+id/PreviousSong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:backgroundTint="#A6FBFB"
+        android:text="Previous"
+        android:textColor="#085656"
+        app:layout_constraintBottom_toBottomOf="@+id/MainPlayPauseButton"
+        app:layout_constraintEnd_toStartOf="@+id/MainPlayPauseButton"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/MainPlayPauseButton"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <ListView
+        android:id="@+id/Songlist"
+        android:layout_width="0dp"
+        android:layout_height="379dp"
+        android:cacheColorHint="#FFFFFF"
+        android:foregroundTint="@color/white"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/SongTitleView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.638" />
+
+    <Button
+        android:id="@+id/MainPlayPauseButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#A6FBFB"
+        android:text="Play/Pause"
+        android:textColor="#085656"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SeekBarLayout"
+        app:layout_constraintVertical_bias="0.523" />
+
+    <Button
+        android:id="@+id/GotoSecondPage"
+        android:layout_width="125dp"
+        android:layout_height="51dp"
+        android:backgroundTint="#A6FBFB"
+        android:text="Mini Player"
+        android:textColor="#085656"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/MusicPLayerText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/MusicPLayerText"
+        app:layout_constraintTop_toTopOf="@+id/MusicPLayerText"
+        app:layout_constraintVertical_bias="0.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
